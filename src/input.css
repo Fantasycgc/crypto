@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+input::placeholder{
+    color: red;
+} */
+
+@layer components {
+  .link {
+    @apply cursor-pointer hover:text-white hover:underline underline-offset-4 transition-all;
+  }
+}
+/* break point: 640px (sm), 768px (md), 1024px (lg), 1280px (xl), 1536px (2xl) */
+
+/*  
+   screen: >= 640px
+*/
+
+@media screen and (min-width: 640px) {
+  /* CSS */
+  .sub-title {
+    color: red;
+  }
+}
+
+/* >= 768px */
+@media screen and (min-width: 768px) {
+  /* CSS */
+  .sub-title {
+    color: green;
+  }
+}
+
+/* screen <= 640px */
+@media screen and (max-width: 640px) {
+  /* CSS */
+  /* .sub-title {
+        color: red;
+    } */
+}
