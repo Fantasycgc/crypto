@@ -89,3 +89,9 @@ git brach -a
 
 git switch <tên nhánh>
 => chuyển qua nhánh <tên nhánh>
+
+## git pull
+
+=> pull code ở repo remote về local
+
+## git pull --no-ff (dùng khi git pull lỗi)
