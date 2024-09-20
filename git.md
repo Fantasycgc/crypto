@@ -1,31 +1,40 @@
-# Tạo repos
+## Tạo repository (repo)
 
-1. git init
-   => nhánh chính : master
+git init
+=> nhánh chính: master
 
-## git inint -b main
+### git init -b main
 
-=> tạo repos local vs nhánh chính có tên main
+=> Tạo repo local vs nhánh chính có tên main
 
-#git remote add origin
-=> liên kết repos remote vs repos local
+## git remote add origin + <url repo>
 
-##file .gitignore quy định những thư mục hay file kg dc phép đẩy lên respo remote
+=> Liên kết repo local vs repo remote
+
+## Ko đưa thư mực node_modules lên repo remote
+
+=> Node_modueles chiếm dung lượng rất lớn
+=> Node_modules có thể cài lại thông qua câu lệnh : npm i
+
+### file .gitignore quy định những thư mục hay file ko đc phép đẩy lên repo remote
+
 => .gitignore nằm ở thư mục root
 
-## git status
+### git status
 
-=> Kiểm tra sự thay đổi các file trong dự án
+=> Kiểm tra sự thay đổi của các file trong dự án
 
-## git add
-
-## git add . => dùng để thêm tất cả các file ở trong thư mục hiện tại vào staging
-
-## git add -A => dùng để thêm tất cả các file ở trong dự án vào trong staging
-
-## git add <đường dẫn file> => chỉ thêm file cụ thể vào trong staging
+### git add
 
 => Thêm file vào trong staging
+
+### git add . => dùng để thêm tất cả các file ở trong thư mực hiện tại vào trong staging
+
+### git add -A => dùng để thêm tất cả các file ở trong dự án vào trong staging
+
+### git add <đường dẫn file> => Chỉ thêm file cụ thể vào trong staging
+
+### demo git conflict
 
 ## working directory (file mau dỏ)
 
@@ -89,3 +98,9 @@ git brach -a
 
 git switch <tên nhánh>
 => chuyển qua nhánh <tên nhánh>
+
+## git pull
+
+=> pull code ở repo remote về local
+
+## git pull --no-ff (dùng khi git pull lỗi)
